@@ -34,7 +34,6 @@ const Navbar = () => {
     >
       <div className="navbar-container">
         <div className="navbar-content">
-          {/* Logo */}
           <Link to="/" className="navbar-logo">
             <motion.div
               whileHover={{ rotate: 360 }}
@@ -44,26 +43,25 @@ const Navbar = () => {
               <img 
                 src="https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop&crop=center" 
                 alt="Shindeshai Masale Logo" 
-                className="logo-image"
+                className="logo-image ShindeShahiMasale1"
               />
             </motion.div>
             <motion.div
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.5 }}
             >
-              <Spade className="logo-icon" />
+              {/* <Spade className="logo-icon" /> */}
             </motion.div>
             <motion.span 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="logo-text"
+              className="logo-text ShindeShahiMasale"
             >
-              Shindeshai Masale
+                शिंदेशाही मसाले
             </motion.span>
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="desktop-nav">
             {navigation.map((item, index) => (
               <motion.div
@@ -88,19 +86,11 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Right side items */}
           <div className="navbar-actions">
             <LanguageSwitcher />
-            
-            {/* Cart Icon */}
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Link
-                to="/cart"
-                className="cart-link"
-              >
+
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Link to="/cart" className="cart-link">
                 <ShoppingCart size={24} />
                 <AnimatePresence>
                   {totalItems > 0 && (
@@ -117,17 +107,10 @@ const Navbar = () => {
               </Link>
             </motion.div>
 
-            {/* User Menu */}
-            <div className="user-menu">
+            <div className="user-menu desktop-user">
               {user ? (
-                <motion.div 
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  className="user-menu"
-                >
-                  <span className="user-info">
-                    {user.name || user.phone}
-                  </span>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="user-menu">
+                  <span className="user-info">{user.name || user.phone}</span>
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -138,14 +121,8 @@ const Navbar = () => {
                   </motion.button>
                 </motion.div>
               ) : (
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link
-                    to="/login"
-                    className="login-link"
-                  >
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Link to="/login" className="login-link">
                     <User size={20} />
                     <span className="login-text">{t('login')}</span>
                   </Link>
@@ -153,7 +130,6 @@ const Navbar = () => {
               )}
             </div>
 
-            {/* Mobile menu button */}
             <motion.button
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -161,21 +137,11 @@ const Navbar = () => {
             >
               <AnimatePresence mode="wait">
                 {isMobileMenuOpen ? (
-                  <motion.div
-                    key="close"
-                    initial={{ rotate: -90 }}
-                    animate={{ rotate: 0 }}
-                    exit={{ rotate: 90 }}
-                  >
+                  <motion.div key="close" initial={{ rotate: -90 }} animate={{ rotate: 0 }} exit={{ rotate: 90 }}>
                     <X size={24} />
                   </motion.div>
                 ) : (
-                  <motion.div
-                    key="menu"
-                    initial={{ rotate: 90 }}
-                    animate={{ rotate: 0 }}
-                    exit={{ rotate: -90 }}
-                  >
+                  <motion.div key="menu" initial={{ rotate: 90 }} animate={{ rotate: 0 }} exit={{ rotate: -90 }}>
                     <Menu size={24} />
                   </motion.div>
                 )}
@@ -185,7 +151,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -211,6 +176,28 @@ const Navbar = () => {
                   </Link>
                 </motion.div>
               ))}
+
+              <div className="mobile-auth">
+                {user ? (
+                  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mobile-user-info">
+                    <span>{user.name || user.phone}</span>
+                    <button onClick={logout} className="logout-btn">
+                      {t('logout')}
+                    </button>
+                  </motion.div>
+                ) : (
+                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                    <Link
+                      to="/login"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="login-link mobile-login"
+                    >
+                      <User size={20} />
+                      <span>{t('login')}</span>
+                    </Link>
+                  </motion.div>
+                )}
+              </div>
             </div>
           </motion.div>
         )}
