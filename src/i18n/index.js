@@ -473,7 +473,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'en',
+    lng: 'mr',
     interpolation: {
       escapeValue: false,
     },
