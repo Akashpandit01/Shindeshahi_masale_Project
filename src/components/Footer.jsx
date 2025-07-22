@@ -41,7 +41,8 @@ const Footer = () => {
               >
                 <Spade className="h-8 w-8 text-orange-500" />
               </motion.div>
-              <span className="text-xl font-bold">Shindeshai Masale</span>
+             <span className="text-xl font-bold">{t('brandTitle')}</span>
+
             </div>
             <motion.p 
               initial={{ opacity: 0 }}
@@ -103,7 +104,7 @@ const Footer = () => {
             <ul className="space-y-3">
              {[
   { icon: MapPin, text: 'Property NO.320, At./Po. Koparde, Tal. Khandala, Dist. Satara - 415521, Maharashtra, India', size: 40 },
-  { icon: Phone, text: '+91 6957216197 / 9822463076', size: 18 },
+  { icon: Phone, text: '+91 9657216197 / 9822463076', size: 18 },
   { icon: Mail, text: 'Shindeshahimasale@gmail.com', size: 18 }
 ].map((contact, index) => (
   <motion.li

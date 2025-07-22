@@ -105,43 +105,44 @@ const Home = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Choose Indian Masale?
-              </h2>
-              <div className="space-y-4">
-                {[
-                  {
-                    title: 'Premium Quality',
-                    description: 'Hand-picked spices from the finest farms across India'
-                  },
-                  {
-                    title: 'Traditional Methods',
-                    description: 'Processed using time-tested traditional techniques'
-                  },
-                  {
-                    title: 'No Preservatives',
-                    description: '100% natural with no artificial colors or preservatives'
-                  }
-                ].map((feature, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.2 }}
-                    className="flex items-start space-x-3"
-                  >
-                    <motion.div
-                      whileHover={{ scale: 1.2 }}
-                      className="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center mt-1"
-                    >
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
-                    </motion.div>
-                    <div>
-                      <h3 className="font-semibold mb-1">{feature.title}</h3>
-                      <p className="text-gray-300">{feature.description}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
+  {t('whyChoose')}
+</h2>
+<div className="space-y-4">
+  {[
+    {
+      title: t('premiumQuality'),
+      description: t('premiumQualityDesc'),
+    },
+    {
+      title: t('traditionalMethods'),
+      description: t('traditionalMethodsDesc'),
+    },
+    {
+      title: t('noPreservatives'),
+      description: t('noPreservativesDesc'),
+    }
+  ].map((feature, index) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ delay: index * 0.2 }}
+      className="flex items-start space-x-3"
+    >
+      <motion.div
+        whileHover={{ scale: 1.2 }}
+        className="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center mt-1"
+      >
+        <div className="w-2 h-2 bg-white rounded-full"></div>
+      </motion.div>
+      <div>
+        <h3 className="font-semibold mb-1">{feature.title}</h3>
+        <p className="text-gray-300">{feature.description}</p>
+      </div>
+    </motion.div>
+  ))}
+</div>
+
             </motion.div>
 
             <motion.div

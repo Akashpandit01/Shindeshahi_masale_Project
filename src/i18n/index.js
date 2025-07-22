@@ -13,6 +13,7 @@ const resources = {
       logout: 'Logout',
       
       // Hero Section
+      brandTitle:"Shindeshahi Spices",
       welcome: 'Welcome to Shindeshai Masale',
       heroSubtitle: 'Authentic Indian Spices & Masalas',
       heroDescription: 'Discover the finest collection of traditional Indian spices, powders, and masalas crafted with care.',
@@ -154,7 +155,20 @@ const resources = {
       orderPlaced: 'Order placed successfully!',
       otpSent: 'OTP sent successfully',
       otpVerified: 'OTP verified successfully',
-      loginSuccess: 'Login successful!'
+      loginSuccess: 'Login successful!',
+
+
+
+
+
+whyChoose: 'Why Choose Indian Masale?',
+premiumQuality: 'Premium Quality',
+premiumQualityDesc: 'Hand-picked spices from the finest farms across India',
+traditionalMethods: 'Traditional Methods',
+traditionalMethodsDesc: 'Processed using time-tested traditional techniques',
+noPreservatives: 'No Preservatives',
+noPreservativesDesc: '100% natural with no artificial colors or preservatives'
+
     }
   },
   hi: {
@@ -168,6 +182,7 @@ const resources = {
       logout: 'लॉगआउट',
       
       // Hero Section
+      brandTitle: "शिंदेशाही मसाले",
       welcome: 'शिंदेशाही मसाले में आपका स्वागत है',
       heroSubtitle: 'प्रामाणिक भारतीय मसाले और पाउडर',
       heroDescription: 'परंपरागत भारतीय मसालों, पाउडर और मसालों का बेहतरीन संग्रह खोजें।',
@@ -309,7 +324,18 @@ const resources = {
       orderPlaced: 'ऑर्डर सफलतापूर्वक दिया गया!',
       otpSent: 'OTP सफलतापूर्वक भेजा गया',
       otpVerified: 'OTP सफलतापूर्वक सत्यापित',
-      loginSuccess: 'लॉगिन सफल!'
+      loginSuccess: 'लॉगिन सफल!',
+
+
+
+whyChoose: 'भारतीय मसाले क्यों चुनें?',
+premiumQuality: 'प्रीमियम गुणवत्ता',
+premiumQualityDesc: 'भारत भर के बेहतरीन खेतों से चुने गए मसाले',
+traditionalMethods: 'पारंपरिक विधियाँ',
+traditionalMethodsDesc: 'समय-परीक्षित पारंपरिक तकनीकों का उपयोग कर संसाधित',
+noPreservatives: 'कोई परिरक्षक नहीं',
+noPreservativesDesc: '100% प्राकृतिक, कोई कृत्रिम रंग या परिरक्षक नहीं'
+
     }
   },
   mr: {
@@ -323,6 +349,7 @@ const resources = {
       logout: 'लॉगआउट',
       
       // Hero Section
+      brandTitle: "शिंदेशाही मसाले",
       welcome: 'शिंदेशाही मसाल्यांमध्ये आपले स्वागत',
       heroSubtitle: 'अस्सल भारतीय मसाले आणि पावडर',
       heroDescription: 'पारंपारिक भारतीय मसाले, पावडर आणि मसाल्यांचा उत्कृष्ट संग्रह शोधा.',
@@ -464,7 +491,20 @@ const resources = {
       orderPlaced: 'ऑर्डर यशस्वीरित्या दिले!',
       otpSent: 'OTP यशस्वीरित्या पाठवले',
       otpVerified: 'OTP यशस्वीरित्या सत्यापित',
-      loginSuccess: 'लॉगिन यशस्वी!'
+      loginSuccess: 'लॉगिन यशस्वी!',
+
+
+
+
+
+      whyChoose: 'भारतीय मसाले का निवड का?',
+premiumQuality: 'प्रीमियम गुणवत्ता',
+premiumQualityDesc: 'भारतभरातील उत्तम शेतांमधून निवडलेले मसाले',
+traditionalMethods: 'पारंपरिक पद्धती',
+traditionalMethodsDesc: 'काळाच्या कसोटीवर उतरलेल्या पारंपरिक पद्धती वापरून प्रक्रिया केलेली',
+noPreservatives: 'कोणतेही संरक्षक नाहीत',
+noPreservativesDesc: '१००% नैसर्गिक, कोणतेही कृत्रिम रंग किंवा संरक्षक नाहीत',
+
     }
   }
 };
