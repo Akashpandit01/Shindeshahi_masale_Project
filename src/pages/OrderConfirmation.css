@@ -1,0 +1,363 @@
+/* Order Confirmation Page Styles */
+.order-confirmation-page {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 3rem 0;
+}
+
+.order-confirmation-container {
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .order-confirmation-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .order-confirmation-container {
+    padding: 0 2rem;
+  }
+}
+
+/* Order Not Found */
+.order-not-found {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-not-found-content {
+  text-align: center;
+}
+
+.order-not-found-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.order-not-found-link {
+  color: #ea580c;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.order-not-found-link:hover {
+  color: #c2410c;
+}
+
+/* Confirmation Card */
+.confirmation-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Success Icon */
+.success-icon-container {
+  margin: 0 auto 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  background: #dcfce7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-icon {
+  color: #16a34a;
+}
+
+/* Main Message */
+.confirmation-message {
+  margin-bottom: 2rem;
+}
+
+.confirmation-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.confirmation-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+/* Order Details */
+.order-details {
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.order-details-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .order-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.order-detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.detail-value {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Order Status */
+.order-status {
+  margin-bottom: 2rem;
+}
+
+.status-timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.status-step {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.status-indicator.active {
+  background: #10b981;
+}
+
+.status-indicator.inactive {
+  background: #d1d5db;
+}
+
+.status-label.active {
+  color: #6b7280;
+}
+
+.status-label.inactive {
+  color: #9ca3af;
+}
+
+.status-divider {
+  width: 2rem;
+  height: 1px;
+  background: #d1d5db;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .action-buttons {
+    flex-direction: row;
+  }
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.action-btn.primary {
+  background: #ea580c;
+  color: white;
+}
+
+.action-btn.primary:hover {
+  background: #c2410c;
+  transform: translateY(-1px);
+}
+
+.action-btn.secondary {
+  border: 1px solid #d1d5db;
+  color: #374151;
+  background: white;
+}
+
+.action-btn.secondary:hover {
+  background: #f9fafb;
+  transform: translateY(-1px);
+}
+
+/* Additional Info */
+.additional-info {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.additional-info-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .order-confirmation-page {
+    padding: 2rem 0;
+  }
+  
+  .order-confirmation-container {
+    padding: 0 0.5rem;
+  }
+  
+  .confirmation-card {
+    padding: 1.5rem;
+  }
+  
+  .confirmation-title {
+    font-size: 1.5rem;
+  }
+  
+  .confirmation-subtitle {
+    font-size: 1rem;
+  }
+  
+  .order-details {
+    padding: 1rem;
+  }
+  
+  .order-details-grid {
+    gap: 0.75rem;
+  }
+  
+  .status-timeline {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .status-divider {
+    width: 1px;
+    height: 1rem;
+  }
+  
+  .action-buttons {
+    gap: 0.75rem;
+  }
+  
+  .action-btn {
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.confirmation-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.success-icon-container {
+  animation: scaleIn 0.5s ease-out 0.2s both;
+}
+
+.confirmation-message {
+  animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+.order-details {
+  animation: fadeInUp 0.6s ease-out 0.6s both;
+}
+
+.order-status {
+  animation: fadeInUp 0.6s ease-out 0.8s both;
+}
+
+.action-buttons {
+  animation: fadeInUp 0.6s ease-out 1s both;
+}
+
+.order-detail-item {
+  animation: slideInLeft 0.4s ease-out;
+}
+
+.order-detail-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.order-detail-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.order-detail-item:nth-child(4) {
+  animation-delay: 0.3s;
+}

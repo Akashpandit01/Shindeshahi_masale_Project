@@ -1,0 +1,50 @@
+/* Cart Context Styles */
+.cart-context {
+  /* This file can contain global cart-related styles if needed */
+}
+
+/* Cart notification styles */
+.cart-notification {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #10b981;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation: slideInRight 0.3s ease-out;
+}
+
+.cart-notification.error {
+  background: #ef4444;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Cart badge animation */
+.cart-badge-animation {
+  animation: bounce 0.3s ease-out;
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+}

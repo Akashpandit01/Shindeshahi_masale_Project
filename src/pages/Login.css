@@ -1,0 +1,231 @@
+/* Login Page Styles */
+.login-page {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.login-container {
+  max-width: 28rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Login Header */
+.login-header {
+  text-align: center;
+}
+
+.login-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+  color: #6b7280;
+}
+
+/* Login Form */
+.login-form-container {
+  background: white;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form Fields */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.form-input.with-icon {
+  padding-left: 2.5rem;
+}
+
+.form-input:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #ea580c;
+  border-color: transparent;
+}
+
+.form-input.otp-input {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+}
+
+.input-help {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn.enabled {
+  background: #ea580c;
+  color: white;
+}
+
+.submit-btn.enabled:hover {
+  background: #c2410c;
+  transform: translateY(-1px);
+}
+
+.submit-btn.disabled {
+  background: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.loading-spinner {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid white;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+
+/* Secondary Actions */
+.secondary-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.change-phone-btn {
+  width: 100%;
+  color: #ea580c;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.change-phone-btn:hover {
+  color: #c2410c;
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .login-page {
+    padding: 2rem 0.5rem;
+  }
+  
+  .login-container {
+    gap: 1.5rem;
+  }
+  
+  .login-title {
+    font-size: 1.5rem;
+  }
+  
+  .login-form-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .form-input.otp-input {
+    font-size: 1.25rem;
+  }
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-header {
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.login-form-container {
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.form-group {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+.form-group:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.submit-btn {
+  animation: fadeInUp 0.4s ease-out 0.2s both;
+}
