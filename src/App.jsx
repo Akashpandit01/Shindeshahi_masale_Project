@@ -14,12 +14,14 @@ import Checkout from './pages/Checkout';
 import Login from './pages/Login';
 import Contact from './pages/Contact';
 import OrderConfirmation from './pages/OrderConfirmation';
+import ScrollToTop from './components/ScrollToTop'; // Add this at the top
 
 function App() {
   return (
     <AuthProvider>
       <CartProvider>
         <Router>
+          <ScrollToTop />
           <div className="min-h-screen flex flex-col">
             <Navbar />
             <main className="flex-grow">

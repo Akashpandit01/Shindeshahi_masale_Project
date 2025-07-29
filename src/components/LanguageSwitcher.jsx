@@ -8,9 +8,10 @@ const LanguageSwitcher = () => {
   const [open, setOpen] = useState(false);
 
   const languages = [
+    { code: 'mr', name: 'मराठी', flag: '🇮🇳' },
     { code: 'en', name: 'English', flag: '🇺🇸' },
-    { code: 'hi', name: 'हिंदी', flag: '🇮🇳' },
-    { code: 'mr', name: 'मराठी', flag: '🇮🇳' }
+    { code: 'hi', name: 'हिंदी', flag: '🇮🇳' }
+    
   ];
 
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
