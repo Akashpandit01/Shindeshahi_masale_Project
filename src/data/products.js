@@ -15,10 +15,30 @@
    import Beetroot_front from "../assets/Beetroot Powder-front.jpg"
    import Beetroot_back from "../assets/Beetroot Powder-back.jpg"
    import onion_front from "../assets/Onion Powder-front.jpg"
-   import onion_back from "../assets/Beetroot Powder-back.jpg"
+   import onion_back from "../assets/Onion Powder-back.jpg"
    import Curry_front from "../assets/Curry Leaves Powder-front.jpg"
+   import Curry_back from "../assets/Curry Leaves Powder-back.jpg"
       import Candy_front from "../assets/Amla Candy-front.jpg"
       import Candy_back from "../assets/Amla Candy-back.jpg"
+       import GroundNut_Chutney_f from "../assets/GroundNut Chutney-front.jpg"
+        import GroundNut_Chutney_b from "../assets/GroundNut Chutney-back.jpg"
+ import Garlic_Coconut_b from "../assets/Garlic Coconut Chutney-back.jpg"
+ import Garlic_Coconut_f from "../assets/Garlic Coconut Chutney-front.jpg"
+ import Niger_Seeds_f from "../assets/Niger Seeds Chutney-front.jpg"
+ import Niger_Seeds_b from "../assets/Niger Seeds Chutney-backjpg.jpg"
+    import Flaxseed_b from "../assets/Flaxseed Chutney-back.jpg"
+      import Flaxseed_f from "../assets/Flaxseed Chutney_front.jpg"
+
+       import onion_garlic_f from "../assets/onion_garlic_front.jpg"
+       import onion_garlic_b from "../assets/onion_garlic_back.jpg"
+      import Biryani from "../assets/Biryani Masala.jpg"
+
+        import Sambar from "../assets/Sambar Masala.jpg"
+
+        import chicken from "../assets/chicken masala.jpg"
+       import meat from "../assets/meat masala.jpg"
+
+      
 
 
 
@@ -166,7 +186,7 @@ export const products = [
     price: 75, // 21% discount
     images: [
       Curry_front,
-      'https://images.pexels.com/photos/1342460/pexels-photo-1342460.jpeg?auto=compress&cs=tinysrgb&w=400'
+      Curry_back
     ],
     category: 'powders',
     descriptionKey: 'curryLeavesPowderDesc',
@@ -198,8 +218,8 @@ export const products = [
     nameKey: 'corianderPowder',
     originalPrice: 70,
     images: [
-      'https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=400',
-      'https://images.pexels.com/photos/357743/pexels-photo-357743.jpeg?auto=compress&cs=tinysrgb&w=400'
+      Coriander_front,
+      Coriander_back
     ],
     category: 'powders',
     descriptionKey: 'corianderPowderDesc',
@@ -215,8 +235,8 @@ export const products = [
     originalPrice: 180,
     price: 150, // 17% discount
     images: [
-      'https://images.pexels.com/photos/4518664/pexels-photo-4518664.jpeg?auto=compress&cs=tinysrgb&w=400',
-      'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400'
+      GroundNut_Chutney_f,
+      GroundNut_Chutney_b
     ],
     category: 'chutneys',
     descriptionKey: 'groundnutChutneyDesc',
@@ -232,8 +252,8 @@ export const products = [
     originalPrice: 200,
     price: 160, // 20% discount
     images: [
-      'https://images.pexels.com/photos/1435073/pexels-photo-1435073.jpeg?auto=compress&cs=tinysrgb&w=400',
-      'https://images.pexels.com/photos/4518664/pexels-photo-4518664.jpeg?auto=compress&cs=tinysrgb&w=400'
+      Garlic_Coconut_f,
+      Garlic_Coconut_b
     ],
     category: 'chutneys',
     descriptionKey: 'garlicCoconutChutneyDesc',
@@ -249,8 +269,8 @@ export const products = [
     originalPrice: 175,
     price: 140, // 20% discount
     images: [
-      'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400',
-      'https://images.pexels.com/photos/1029898/pexels-photo-1029898.jpeg?auto=compress&cs=tinysrgb&w=400'
+     Niger_Seeds_f,
+      Niger_Seeds_b
     ],
     category: 'chutneys',
     descriptionKey: 'nigerSeedsChutneyDesc',
@@ -266,8 +286,9 @@ export const products = [
     originalPrice: 190,
     price: 155, // 18% discount
     images: [
-      'https://images.pexels.com/photos/1029898/pexels-photo-1029898.jpeg?auto=compress&cs=tinysrgb&w=400',
-      'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400'
+      Flaxseed_f,
+      Flaxseed_b
+
     ],
     category: 'chutneys',
     descriptionKey: 'flaxseedChutneyDesc',
@@ -283,8 +304,8 @@ export const products = [
     originalPrice: 120,
     price: 95, // 21% discount
     images: [
-      'https://images.pexels.com/photos/1435058/pexels-photo-1435058.jpeg?auto=compress&cs=tinysrgb&w=400',
-      'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=400'
+      onion_garlic_f,
+    onion_garlic_b
     ],
     category: 'masalas',
     descriptionKey: 'onionGarlicMasalaDesc',
@@ -300,8 +321,8 @@ export const products = [
     originalPrice: 150,
     price: 120, // 20% discount
     images: [
-      'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=400',
-      'https://images.pexels.com/photos/1435058/pexels-photo-1435058.jpeg?auto=compress&cs=tinysrgb&w=400'
+      Biryani,
+      Biryani
     ],
     category: 'masalas',
     descriptionKey: 'biryaniMasalaDesc',
@@ -317,8 +338,8 @@ export const products = [
     originalPrice: 140,
     price: 110, // 21% discount
     images: [
-      'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=400',
-      'https://images.pexels.com/photos/1435058/pexels-photo-1435058.jpeg?auto=compress&cs=tinysrgb&w=400'
+     chicken,
+   chicken
     ],
     category: 'masalas',
     descriptionKey: 'chickenMasalaDesc',
@@ -334,8 +355,8 @@ export const products = [
     originalPrice: 85,
     price: 85,
     images: [
-      'https://images.pexels.com/photos/1435058/pexels-photo-1435058.jpeg?auto=compress&cs=tinysrgb&w=400',
-      'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=400'
+    Sambar,
+      Sambar
     ],
     category: 'masalas',
     descriptionKey: 'sambarMasalaDesc',
@@ -351,8 +372,8 @@ export const products = [
     originalPrice: 155,
     price: 125, // 19% discount
     images: [
-      'https://images.pexels.com/photos/1435058/pexels-photo-1435058.jpeg?auto=compress&cs=tinysrgb&w=400',
-      'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=400'
+      meat,
+     meat
     ],
     category: 'masalas',
     descriptionKey: 'meatMasalaDesc',
